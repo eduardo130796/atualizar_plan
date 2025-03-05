@@ -152,11 +152,12 @@ else:
     st.warning("⚠️ Para processar, por favor, faça o upload de ambos os arquivos acima.")
 
 
-# Rodapé com HTML e CSS para estilização
+# Rodapé fixo com largura total
 rodape = """
     <style>
         .footer {
             position: fixed;
+            left: 0;
             bottom: 0;
             width: 100%;
             background-color: #f8f9fa;
@@ -165,6 +166,7 @@ rodape = """
             font-size: 14px;
             color: #6c757d;
             border-top: 1px solid #dee2e6;
+            z-index: 100;
         }
     </style>
     <div class="footer">
@@ -174,4 +176,3 @@ rodape = """
 
 # Exibir o rodapé na interface
 st.markdown(rodape, unsafe_allow_html=True)
-
