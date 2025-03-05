@@ -150,3 +150,28 @@ if uploaded_file_base and uploaded_file_atualizacao:
 
 else:
     st.warning("⚠️ Para processar, por favor, faça o upload de ambos os arquivos acima.")
+
+
+# Rodapé com HTML e CSS para estilização
+rodape = """
+    <style>
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #f8f9fa;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+        }
+    </style>
+    <div class="footer">
+        Desenvolvido por <strong>Eduardo Júnior</strong> 🚀 | 2025
+    </div>
+"""
+
+# Exibir o rodapé na interface
+st.markdown(rodape, unsafe_allow_html=True)
+
