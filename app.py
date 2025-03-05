@@ -170,7 +170,7 @@ rodape = """
         }
     </style>
     <div class="footer">
-        Desenvolvido por <strong>Eduardo Júnior</strong> 🚀 | 2025
+        Desenvolvido por <strong>Eduardo Júnior</strong> | 2025
     </div>
 """
 
